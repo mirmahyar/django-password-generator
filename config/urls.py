@@ -19,6 +19,7 @@ from generator import views as genviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', genviews.home),
-    path('password/', genviews.password, name = 'passwordURL')
+    path('', genviews.home, name = 'home'),
+    path('password/', genviews.password, name = 'passwordURL'),
+    path('about',genviews.about,name='about')
 ]
